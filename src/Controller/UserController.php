@@ -17,4 +17,15 @@ class UserController extends AbstractController
             'controller_name' => 'UserController',
         ]);
     }
+
+
+    /**
+     * @Route("/home", name="home")
+     */
+    public function home(): Response
+    {
+        return $this->render('base.html.twig', [
+            'controller_name' => 'UserController',
+        ]);
+    }
 }
